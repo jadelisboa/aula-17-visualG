@@ -1,0 +1,42 @@
+Algoritmo "continua"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 25/03/2024
+Var
+// Seção de Declarações das variáveis 
+ Par: inteiro
+ Impar: inteiro
+ continua: caractere
+ numero: inteiro
+ ndigitados: inteiro
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+ continua <- "S"
+   Enquanto (continua = "s") ou (continua = "S") FACA
+   
+    ESCREVA("Digite um numero: ")
+    Leia(numero)
+    
+    ndigitados <- ndigitados + 1
+
+    ESCREVA("Deseja continuar ?")
+    Leia(continua)
+
+    Se(numero % 2 = 0) Entao
+      Par <- Par + 1
+      
+     Senao
+     Impar <- Impar + 1 //linha d/baixo, s/parênteses
+     
+    Fimse
+
+   Fimenquanto
+   
+   ESCREVAL ("A quantidade de numero digitado foi: ",  ndigitados)
+   ESCREVAL("numeros pares: ", Par)
+   ESCREVAL("numeros impares: ", Impar)
+   
+
+  Fimalgoritmo
